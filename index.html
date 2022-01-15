@@ -7,16 +7,29 @@
     <link rel="shortcut icon" href="https://github.com/nhwwnhww/nhwwnhww.github.io/blob/main/img/logo.jpg?raw=true" type="image/x-icon">
     <title>Wei's Webs</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         #head_1 {
             text-align: center;
             width: 100%;
+            height: 10%;
         }
         #main_image {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 30%;
-            height: 70%;
+            width: 40%;
+            height: 60%;
+            cursor: default;
+            background: linear-gradient(135deg, red, yellow, green);
+            animation: animate 3s linear infinite;
+        }
+        @keyframes animate {
+        100%{
+            filter: hue-rotate(360deg);
+            }
         }
     </style>
 </head>
