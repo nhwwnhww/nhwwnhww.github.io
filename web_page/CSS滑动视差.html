@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- 参考山羊の前端小窝仿真的 -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+    <title>Sliding Parallax</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Neonderthaw', cursive;
+    }
+    .shell{
+        height: 100vh;
+        overflow-x: hidden;
+        perspective: 3px;
+    }
+    .shell div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: 30px;
+        letter-spacing: 2px;
+    }
+    .image{
+        transform: translateZ(-1px) scale(1.6);
+        background-size: cover;
+        height: 100vh;
+        z-index: -1;
+    }
+    .text{
+        height: 50vh;
+        background-color: #fff;
+    }
+    .text h1{
+        color: #000;
+        font-size: 10vh;
+        transition: 1s;
+    }
+    .text h1:hover {
+        text-shadow: rgba(218, 165, 32, 0.397) 2vh 0 0;
+    }
+    .heading{
+        z-index: -1;
+        transform: translateY(-30vh) translateZ(1px);
+        color: #fff;
+        font-size: 5vh;
+        transition: 1s;
+    }
+    .heading:hover {
+        text-shadow: rgba(218, 165, 32, 0.397) 2vh 0 0;
+    }
+    #back {
+        border: blanchedalmond 1px solid;
+        border-radius: 10px;
+        padding: 0 15px;
+        margin-top: 10px;
+        text-align: center;
+        background-color: rgb(48, 48, 48);
+        text-decoration: none;
+        color: #fff;
+        transition: 0.5s;
+    }
+    #back h1 {
+        font-size: 4vh;
+    }
+    #back:hover {
+        color: black;
+        background-color: blanchedalmond;
+    }
+</style>
+
+<body>
+    <div class="shell">
+        <div class="image" style="background-image: url('./img/maid_1.jpg');"></div>
+        <div class="heading">
+            <h1>While there is life</h1>
+        </div>
+        <div class="text">
+            <h1>there is hope</h1>
+        </div>
+
+        <div class="image" style="background-image: url('./img/maid_2.jpg');"></div>
+        <div class="heading">
+            <h1>The more you care</h1>
+        </div>
+        <div class="text">
+            <h1>the more you have to lose</h1>
+        </div>
+
+        <div class="image" style="background-image: url('./img/maid_3.jpg');"></div>
+        <div class="heading">
+            <h1>Don't try to hard</h1>
+        </div>
+        <div class="text">
+            <h1>the best things come when you least expect them to</h1>
+        </div>
+
+        <div class="image" style="background-image: url('./img/maid_4.jpg');"></div>
+        <div class="heading" style="flex-direction: column;">
+            <h1 style="font-size: 5vh;">The sandflass remembers the time we lost.</h1>
+            <a href="https://nhwwnhww.github.io" id="back"><h1 style="transition: 1s;">back</h1></a>
+        </div>
+    </div>
+</body>
+
+</html>
