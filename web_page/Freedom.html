@@ -30,15 +30,43 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        #main_image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40%;
-            height: 60%;
+        #main {
+            text-align: center;
+            width: 100%;
+            height: 70%;
             cursor: default;
+            
+        }
+        #freedom {
+            align-items: center;
+            width: 60%;
             background: linear-gradient(135deg, red, yellow, green);
             animation: animate 1s linear infinite;
+        }
+        .gif {
+            position:absolute;
+            width: 18%;
+            margin-top: 20%;
+        }
+        #gif_left {
+            left: 0;
+        }
+        #gif_right {
+            right: 0;
+        }
+        .button {
+            width: 10%;
+            border-radius: 10px;
+            display: block;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            color: honeydew;
+            background: linear-gradient(135deg, red, yellow, green);
+            animation: animate 1s linear infinite;
+            text-decoration: none;
+            text-align: center;
         }
         @keyframes animate {
         100%{
@@ -49,7 +77,13 @@
 </head>
 <body>
     <h1 class="head_1" style="font-family: 'ZCOOL KuaiLe', cursive;">香蕉君也许会迟到，但永远不会缺席</h1>
-    <img id="main_image" src="./img/Oh_Yeah_Freedom.png" alt="">
+    <div id="main">
+        <img class="gif" id="gif_left" src="./img/dog_meme_1.gif" alt="">
+        <img id = "freedom" src="./img/Oh_Yeah_Freedom.png" alt="">
+        <img class="gif" id="gif_right" src="./img/dog_meme_1.gif" alt="">
+    </div>
     <h1 class="head_1">Ricardo may be late, but he will never be absent</h1>
+    <br>
+    <a class="button" href="../index.html">back</a>
 </body>
 </html>
