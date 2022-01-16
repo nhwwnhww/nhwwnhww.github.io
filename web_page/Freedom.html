@@ -68,6 +68,21 @@
             text-decoration: none;
             text-align: center;
         }
+        
+        #video {
+            position: relative;
+            align-items: center;
+        }
+        video {
+            left: 30vw;
+            bottom: 0;
+        }
+
+        #warning {
+            margin-top: 10vh;
+            background-color: crimson;
+        }
+
         @keyframes animate {
         100%{
             filter: hue-rotate(360deg);
@@ -85,5 +100,19 @@
     <h1 class="head_1">Ricardo may be late, but he will never be absent</h1>
     <br>
     <a class="button" href="../index.html">back</a>
+
+    <div id="warning">
+        <h1 class="head_1">WARNING</h1>
+        <h1 class="head_1">ADULT CONTENT</h1>
+        <h1 class="head_1">18+</h1>
+    </div>
+    
+    <div id="video">
+        <video width="1080" height="720" controls>
+            <source src="../video/PDfX2jJ1_7548076251.mp4" type="video/mp4">
+        </video>
+        <img class="gif" id="gif_right" style="width: 15%;" src="./img/dog_meme_1.gif" alt="">
+    </div>
+    
 </body>
 </html>
