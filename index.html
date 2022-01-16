@@ -4,33 +4,229 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://github.com/nhwwnhww/nhwwnhww.github.io/blob/main/img/logo.jpg?raw=true" type="image/x-icon">
     <title>Wei's Webs</title>
-    <!--font family-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
     <style>
-        * {
-            font-family: 'Mochiy Pop P One', sans-serif;
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Indie Flower', cursive;
         }
-        a {
-            align-items: center;
+
+        body {
+            background-color: black;
+        }
+
+        #header {
+            height: 10vh;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.274);
+        }
+
+        .dropdown {
+            /* Border */
             display: flex;
-            justify-content: center;
-            text-decoration: none;
+            flex-direction: row-reverse;
+
+            /* Reset list styles */
+            list-style-type: none;
+
+            height: 100%;
+        }
+
+        .dropdown li {
+            /* Spacing */
+            padding: 1vh;
+
+            /* Used to position the sub dropdown */
+            position: relative;
+            color: rgb(216, 255, 206);
+            margin: 1vh 1vw;
+
+            /* Border */
+            border-radius: 10px;
+
             font-size: 5vh;
-            padding: 10px;
-            border: 2px black solid;
-            background-color: bisque;
+            text-align: center;
+        }
+
+        .dropdown li a {
+            text-decoration: none;
+            color: rgb(197, 243, 179);
+        }
+
+        /* The sub dropdown */
+        .dropdown ul {
+            /* Border */
+            border: 1px solid rgba(40, 150, 6, 0.897);
+            border-radius: 10px;
+
+            /* Hidden by default */
+            display: none;
+
+            /* Absolute position */
+            left: 0;
+            position: absolute;
+            top: 100%;
+
+            /* Reset styles */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            /* Width */
+            width: 15vw;
+        }
+
+        /* The second level sub dropdown */
+        .dropdown ul ul {
+            position: absolute;
+            top: 0;
+            left: -100%;
+        }
+
+        /* Change background color of list item when being hovered */
+        .dropdown li:hover {
+            background-color: rgba(170, 223, 128, 0.493);
+        }
+
+        /* Show the direct sub dropdown when hovering the list item */
+        .dropdown li:hover > ul {
+            display: block;
+        }
+
+        /* Page */
+        #Page_1 {
+            width: 100%;
+            height: 100vh;
+            
+            
+        }
+
+        #background {
+            position:absolute;
+            width: 100%;
+            height: 100vh;
+            background-image: url(./img/background_1.png);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+            transition: 2s;
+        }
+        #background:hover {
+            opacity: 30%;
+        }
+
+        #Page_2 {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .Page__main {
+            /* Take the remaining height */
+            flex-grow: 1;
+
+            /* Layout the left sidebar, main content and right sidebar */
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+
+        .Page__left {
+            width: 15%;
+        }
+
+        .Page__middle {
+            /* Take the remaining width */
+            flex-grow: 1;
+            background-color: rgb(216, 42, 42);
+        }
+
+        .Page__right {
+            width: 15%;
         }
     </style>
 </head>
 <body>
-    <h1>Simple index Page</h1>
-    <br>
-    <a href="web_page/Freedom.html">web 1</a>
-    <hr>
-    <a href="web_page/CSS滑动视差.html">web 2</a>
+
+    <div id="header">
+        <ul class="dropdown">
+            <!-- left -->>
+            <li style="position: absolute; left: 2vw;"><a href="#">Home</a></li>
+
+            <!-- right -->>
+            <li><a href="https://github.com/nhwwnhww/nhwwnhww.github.io">About</a></li>
+
+            <li><a href="">Building</a></li>
+
+            <li>
+                <div><a href="">Project</a></div>
+                <!-- First level sub dropdown -->
+                <ul>
+                    <li><a href="">Building</a></li>
+                    <li><a href="">Building</a></li>
+                    <li>
+                        <div>Web Page</div>
+                        <!-- Second level sub dropdown -->
+                        <ul>
+                            <li><a href="web_page/Freedom.html">Freedom Man</a></li>
+                            <li><a href="web_page/CSS滑动视差.html">Sliding Parallax</a></li>
+                            <li><a href="">Building</a></li>
+                            <li><a href="">Building</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Building</a></li>
+                    <li><a href="">Building</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div id="Page_1">
+        <div id="background"></div>
+        <main class="Page__main">
+            <!-- Left sidebar -->
+            <aside class="Page__left">
+                ...
+            </aside>
+    
+            <!-- Main content -->
+            <article class="Page__middle">
+                ...
+            </article>
+    
+            <!-- Right sidebar -->
+            <nav class="Page__right">
+                ...
+            </nav>
+        </main>
+    </div>
+
+    <div id="Page_2">
+        <main class="Page__main">
+            <!-- Left sidebar -->
+            <aside class="Page__left">
+                ...
+            </aside>
+    
+            <!-- Main content -->
+            <article class="Page__middle">
+                ...
+            </article>
+    
+            <!-- Right sidebar -->
+            <nav class="Page__right">
+                ...
+            </nav>
+        </main>
+    </div>
 </body>
 </html>
