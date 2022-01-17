@@ -111,8 +111,6 @@
         #Page_1 {
             width: 100%;
             height: 100vh;
-            
-            
         }
 
         #background {
@@ -127,6 +125,21 @@
         }
         #background:hover {
             opacity: 30%;
+        }
+
+        #Page_1_main {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #Page_1_main h1{
+            font-family: 'Indie Flower', cursive;
+            font-size: 5vw;
+            font-weight: 600;
+            color: rgb(208, 252, 204);
+            text-shadow: rgba(151, 228, 36, 0.733) 4px 4px;
         }
 
         #Page_2 {
@@ -152,7 +165,6 @@
         .Page__middle {
             /* Take the remaining width */
             flex-grow: 1;
-            background-color: rgb(216, 42, 42);
         }
 
         .Page__right {
@@ -297,7 +309,11 @@
     
             <!-- Main content -->
             <article class="Page__middle">
-                
+                <div id="Page_1_main">
+                    <h1 style="margin-top: 20vh;">What's up</h1>
+                    <h1>My name is Wei</h1>
+                    <h1>Welcome to my Website :)</h1>
+                </div>
             </article>
     
             <!-- Right sidebar -->
