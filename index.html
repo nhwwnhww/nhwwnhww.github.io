@@ -261,7 +261,15 @@
         #Page_3 {
             width: 100%;
             height: 100vh;
-            background-color: rgb(190, 190, 247);
+            background-color: rgb(0, 0, 0);
+        }
+
+        #Page_3_head {
+            margin-top: 5vh;
+            color: bisque;
+            font-family: 'Indie Flower', cursive;
+            font-size: 5vh;
+            text-align: center;
         }
 
         #comment {
@@ -492,32 +500,18 @@
     <div id="Page_3">
             <main class="Page__main">
                 <!-- Left sidebar -->
-                <aside class="Page__left">LLLLLLLLLLLLLL</aside>
+                <aside class="Page__left"></aside>
         
                 <!-- Main content -->
                 <article class="Page__middle">
-                    <script>
-                        const endpoint = "https://api.spotify.com/v1/recommendations";
-                        const artists = '6sFIWsNpZYqfjUpaCgueju';
-                        const danceability = encodeURIComponent('0.9');
+                    <h1 id="Page_3_head">Learn Algorithm</h1>
+                    <iframe src="https://visualgo.net/en" frameborder="0" style="width: 100%;height: 80%; margin-bottom: 5vh;">
 
-                        fetch(`${endpoint}?seed_artists=${artists}&target_danceability=${danceability}`, {
-                        method: "GET",
-                        headers: {
-                            Authorization: `Bearer ${userAccessToken}`
-                        }
-                        })
-                        .then(response => response.json())
-                        .then(({tracks}) => {
-                        tracks.forEach(item => {
-                            console.log(`${item.name} by ${item.artists[0].name}`);
-                        })
-                        })
-                    </script>
+                    </iframe>
                 </article>
         
                 <!-- Right sidebar -->
-                <nav class="Page__right">RRRRRRRRRRRRR</nav>
+                <nav class="Page__right"></nav>
             </main>
     </div>
 
