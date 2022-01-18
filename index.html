@@ -258,6 +258,11 @@
             margin-bottom: 5vh;
             font-family: 'Indie Flower', cursive;
         }
+        #Page_3 {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(190, 190, 247);
+        }
     </style>
 </head>
 <body>
@@ -479,6 +484,57 @@
             </nav>
         </main>
     </div>
+
+    <div id="Page_3">
+            <main class="Page__main">
+                <!-- Left sidebar -->
+                <aside class="Page__left">LLLLLLLLLLLLLL</aside>
+        
+                <!-- Main content -->
+                <article class="Page__middle">
+                    <script>
+                        const endpoint = "https://api.spotify.com/v1/recommendations";
+                        const artists = '6sFIWsNpZYqfjUpaCgueju';
+                        const danceability = encodeURIComponent('0.9');
+
+                        fetch(`${endpoint}?seed_artists=${artists}&target_danceability=${danceability}`, {
+                        method: "GET",
+                        headers: {
+                            Authorization: `Bearer ${userAccessToken}`
+                        }
+                        })
+                        .then(response => response.json())
+                        .then(({tracks}) => {
+                        tracks.forEach(item => {
+                            console.log(`${item.name} by ${item.artists[0].name}`);
+                        })
+                        })
+                    </script>
+                </article>
+        
+                <!-- Right sidebar -->
+                <nav class="Page__right">RRRRRRRRRRRRR</nav>
+            </main>
+    </div>
+
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81NTI0OC8zMTcxNQ==">
+        <script type="text/javascript">
+        (function(d, s) {
+            var j, e = d.getElementsByTagName(s)[0];
+        
+            if (typeof LivereTower === 'function') { return; }
+        
+            j = d.createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
+        
+            e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+        </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
 
     <footer id="fh5co-footer" >
 		<div class="container">
