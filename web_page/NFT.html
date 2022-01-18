@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFTTTTTTT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Teko', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        #main {
+            /* Center the content */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 40vh;
+            cursor: default;
+            background: linear-gradient(135deg, red, yellow, green);
+            animation: animate 3s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gif {
+            position:absolute;
+            width: 18%;
+            margin-top: 15%;
+        }
+        #gif_left {
+            left: 5%;
+        }
+        #gif_right {
+            right: 5%;
+        }
+        @keyframes animate {
+        100%{
+            filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img class="gif" id="gif_left" src="./img/cat_meme.gif" alt="">
+    <img class="gif" id="gif_right" src="./img/cat_meme.gif" alt="">
+    <div id="main">
+        <h1>NFT</h1>
+    </div>
+</body>
+</html>

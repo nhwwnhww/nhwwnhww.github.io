@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <!-- show data -->
+    <h3>Show Data By One Click</h3>
+    <p id="show_date"></p>
+    <button onclick="document.getElementById('show_date').innerHTML = Date()">click me</button>
+    <hr>
+    <!-- change color -->
+    <div id="color_block" style="color: blue"><h1>!!hello!!</h1></div>
+    <button onclick="document.getElementById('color_block').style.color = 'blue'">blue</button>
+    <button onclick="document.getElementById('color_block').style.color = 'red'">red</button>
+    <hr>
+    <!-- hidding -->
+    <h1 id="hide">:)</h1>
+    <button onclick="document.getElementById('hide').style.display = 'none'">disappear</button>
+    <button onclick="document.getElementById('hide').style.display = 'block'">appear</button>
+    <hr>
+
+
+</body>
+</html>
