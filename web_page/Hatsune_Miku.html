@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <title>Hastsune Miku</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Mochiy Pop P One', sans-serif;
+        }
+
+        body {
+            background-color: rgb(57, 197, 187);
+        }
+
+        /* Page_1 */
+        #Page_1 {
+            height: 100vh;
+            width: 100%;
+            /* Center the content */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-image: url("img/Hatsune_miku/background.jfif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 40%;
+            z-index: 1;
+            transition: 5s;
+        }
+        #Page_1:hover {
+            opacity: 100%;
+            z-index: 999;
+        }
+
+        .Page_1_head {
+            z-index: 2;
+            font-size: 12vh;
+            background: linear-gradient(45deg,#bec8d1, #86cecb, #137a7f);
+            animation: animate 10s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* gird image */
+
+        .shell div img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .shell {
+            margin-top: 10vh;
+            display: grid;
+            padding: 20px;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 270px;
+            grid-auto-flow: dense;
+        }
+
+        .shell>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(61, 51, 51);
+            border-radius: 5px;
+            color: 	#e12885;
+            font: 100 100px 'Kristen ITC';
+            position: relative;
+        }
+
+        span {
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            text-shadow: -5px 0 #137a7f, 0 5px #137a7f, 5px 0 #137a7f, 0 -5px #137a7f;
+        }
+
+        .shell .wide {
+            grid-column: span 2;
+        }
+
+        .shell .tall {
+            grid-row: span 2;
+        }
+
+        .shell .big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        #back_div {
+            display: block;
+            position: relative;
+            align-items: center;
+        }
+
+        #back {
+            width: 10vw;
+            border: blanchedalmond 1px solid;
+            border-radius: 10px;
+            margin-top: 10px;
+            text-align: center;
+            background-color: #373b3e;
+            text-decoration: none;
+            color: #bec8d1;
+            transition: 0.5s;
+        }
+        #back h1 {
+            font-size: 4vh;
+        }
+        #back:hover {
+            color: black;
+            background-color: blanchedalmond;
+        }
+
+        @keyframes animate {
+        100%{
+            filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Page_1 -->
+    <div id="Page_1">
+        <h1 class="Page_1_head">Hatsune Miku</h1>
+        <h1 class="Page_1_head">初音ミク</h1>
+    </div>
+
+    <!-- Page_2 -->
+    <div class="shell">
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_1.png" alt="">
+            <span>1</span>
+        </div>
+        <div>
+            <img src="./img/Hatsune_miku/n_3.jfif" alt="">
+            <span>2</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_2.jfif" alt="">
+            <span>3</span>
+        </div>
+        <div>
+            <img src="./img/Hatsune_miku/n_2.jfif" alt="">
+            <span>4</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_3.jfif" alt="">
+            <span>5</span>
+        </div>
+        <div>
+            <img src="./img/Hatsune_miku/n_4.jfif" alt="">
+            <span>6</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_4.jfif" alt="">
+            <span>7</span>
+        </div>
+        <div class="big">
+            <img src="./img/Hatsune_miku/n_1.jfif" alt="">
+            <span>8</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_5.jfif" alt="">
+            <span>9</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_6.jfif" alt="">
+            <span>10</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_7.png" alt="">
+            <span>11</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_8.jfif" alt="">
+            <span>12</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_9.jfif" alt="">
+            <span>13</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_10.jfif" alt="">
+            <span>14</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_11.png" alt="">
+            <span>15</span>
+        </div>
+        <div>
+            <img src="./img/Hatsune_miku/n_4.jfif" alt="">
+            <span>16</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_12.png" alt="">
+            <span>17</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_13.jfif" alt="">
+            <span>18</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_14.jfif" alt="">
+            <span>19</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_15.jfif" alt="">
+            <span>20</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_16.jfif" alt="">
+            <span>21</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_17.jfif" alt="">
+            <span>22</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_18.jfif" alt="">
+            <span>23</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_19.jfif" alt="">
+            <span>24</span>
+        </div>
+        <div class="big">
+            <img src="./img/Hatsune_miku/n_10.png" alt="">
+            <span>25</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_20.png" alt="">
+            <span>26</span>
+        </div>
+        <div class="big">
+            <img src="./img/Hatsune_miku/n_13.png" alt="">
+            <span>27</span>
+        </div>
+        <div>
+            <img src="./img/Hatsune_miku/n_11.jfif" alt="">
+            <span>28</span>
+        </div>
+        <div class="tall">
+            <img src="./img/Hatsune_miku/tall_21.jfif" alt="">
+            <span>29</span>
+        </div>
+        <div>
+            <img src="./img/Hatsune_miku/n_12.jfif" alt="">
+            <span>30</span>
+        </div>
+    </div>
+    <div id="back_div">
+        <a href="../index.html" id="back"><h1 style="transition: 1s;">back</h1></a>
+    </div>
+</body>
+</html>
