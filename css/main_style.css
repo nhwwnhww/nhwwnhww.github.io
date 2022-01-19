@@ -17,10 +17,12 @@ body {
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: #4f534f;
-    opacity: 1;
-    background-image: radial-gradient(circle at center center, #72f87d, #4f534f), repeating-radial-gradient(circle at center center, #72f87d, #72f87d, 16px, transparent 32px, transparent 16px);
-    background-blend-mode: multiply;
+    background-color: #153f0b;
+    opacity: 0.9;
+    background-image:  linear-gradient(135deg, rgba(12, 70, 15, 1) 25%, transparent 25%), linear-gradient(225deg, rgba(12, 70, 15, 1) 25%, transparent 25%), linear-gradient(45deg, rgba(12, 70, 15, 1) 25%, transparent 25%), linear-gradient(315deg, rgba(12, 70, 15, 1) 25%, #153f0b 25%);
+    background-position:  30px 0, 30px 0, 0 0, 0 0;
+    background-size: 30px 30px;
+    background-repeat: repeat;
 }
 
 .dropdown {
