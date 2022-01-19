@@ -217,11 +217,13 @@ body {
     flex: 1;
 
     /* OPTIONAL: Space between columns */
-    margin: 5vh 8px;
+    margin: 5vh 18px;
 
     /* OPTIONAL: Border */
     border: 1px solid rgba(247, 240, 240, 0.3);
-    border-radius: 4px;
+    border-radius: 75px;
+    box-shadow:  20px 20px 60px #122f13,
+             -20px -20px 60px #183f19;
 
     /* background color */
     background-color: #f4fbf4;
