@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masonry layout</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(235, 151, 151);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .shell {
+            display: grid;
+            padding: 20px;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 270px;
+            grid-auto-flow: dense;
+        }
+
+        .shell>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(61, 51, 51);
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+            font: 100 100px 'Kristen ITC';
+            position: relative;
+        }
+
+        span {
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            text-shadow: -5px 0 rgb(0, 0, 0), 0 5px rgb(0, 0, 0), 5px 0 rgb(0, 0, 0), 0 -5px rgb(0, 0, 0);
+        }
+
+        .shell .wide {
+            grid-column: span 2;
+        }
+
+        .shell .tall {
+            grid-row: span 2;
+        }
+
+        .shell .big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        #back_div {
+            display: block;
+            position: relative;
+            align-items: center;
+        }
+
+        #back {
+            width: 10vw;
+            border: blanchedalmond 1px solid;
+            border-radius: 10px;
+            margin-top: 10px;
+            text-align: center;
+            background-color: rgb(48, 48, 48);
+            text-decoration: none;
+            color: #fff;
+            transition: 0.5s;
+        }
+        #back h1 {
+            font-size: 4vh;
+        }
+        #back:hover {
+            color: black;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="tall">
+            <img src="./img/tall_1.jpg" alt="">
+            <span>1</span>
+        </div>
+        <div>
+            <img src="./img/normal_1.jpg" alt="">
+            <span>2</span>
+        </div>
+        <div>
+            <img src="./img/normal_2.jpg" alt="">
+            <span>3</span>
+        </div>
+        <div class="wide">
+            <img src="./img/wide_1.jpg" alt="">
+            <span>4</span>
+        </div>
+        <div>
+            <img src="./img/normal_3.jpg" alt="">
+            <span>5</span>
+        </div>
+        <div class="tall">
+            <img src="./img/tall_2.jpg" alt="">
+            <span>6</span>
+        </div>
+        <div class="big">
+            <img src="./img/big_1.jpg" alt="">
+            <span>7</span>
+        </div>
+        <div>
+            <img src="./img/normal_4.jpg" alt="">
+            <span>8</span>
+        </div>
+        <div class="wide">
+            <img src="./img/wide_2.jpg" alt="">
+            <span>9</span>
+        </div>
+        <div class="big">
+            <img src="./img/big_2.jpg" alt="">
+            <span>10</span>
+        </div>
+        <div class="tall">
+            <img src="./img/tall_3.jpg" alt="">
+            <span>11</span>
+        </div>
+        <div>
+            <img src="./img/normal_5.jpg" alt="">
+            <span>12</span>
+        </div>
+        <div>
+            <img src="./img/normal_6.jpg" alt="">
+            <span>13</span>
+        </div>
+        <div>
+            <img src="./img/normal_7.jpg" alt="">
+            <span>14</span>
+        </div>
+        <div>
+            <img src="./img/normal_8.jpg" alt="">
+            <span>15</span>
+        </div>
+        <div class="wide">
+            <img src="./img/wide_3.jpg" alt="">
+            <span>16</span>
+        </div>
+        <div>
+            <img src="./img/normal_9.jpg" alt="">
+            <span>17</span>
+        </div>
+        <div>
+            <img src="./img/normal_10.jpg" alt="">
+            <span>18</span>
+        </div>
+        <div class="wide">
+            <img src="./img/wide_4.jfif" alt="">
+            <span>19</span>
+        </div>
+        <div>
+            <img src="./img/normal_11.jpg" alt="">
+            <span>20</span>
+        </div>
+        <div class="wide">
+            <img src="./img/wide_5.png" alt="">
+            <span>21</span>
+        </div>
+        <div class="big">
+            <img src="./img/big_3.jpg" alt="">
+            <span>22</span>
+        </div>
+        <div>
+            <img src="./img/normal_12.jpg" alt="">
+            <span>23</span>
+        </div>
+        <div>
+            <img src="./img/normal_13.jpg" alt="">
+            <span>24</span>
+        </div>
+        <div class="big">
+            <img src="./img/big_4.jpg" alt="">
+            <span>25</span>
+        </div>
+        <div class="tall">
+            <img src="./img/tall_4.jpg" alt="">
+            <span>26</span>
+        </div>
+        <div>
+            <img src="./img/normal_14.jpg" alt="">
+            <span>27</span>
+        </div>
+        <div>
+            <img src="./img/normal_15.jpg" alt="">
+            <span>28</span>
+        </div>
+        <div>
+            <img src="./img/normal_16.jfif" alt="">
+            <span>29</span>
+        </div>
+    </div>
+    <div id="back_div">
+        <a href="../index.html" id="back"><h1 style="transition: 1s;">back</h1></a>
+    </div>
+</body>
+
+</html>
