@@ -5,7 +5,11 @@
 }
 
 body {
-    background-color: black;
+    background-color: #303230;
+    opacity: 1;
+    background-image:  radial-gradient(#a8f8ae 0.9px, transparent 0.9px), radial-gradient(#a8f8ae 0.9px, #303230 0.9px);
+    background-size: 36px 36px;
+    background-position: 0 0,18px 18px;
 }
 
 #header {
@@ -13,7 +17,10 @@ body {
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: #4f534f;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #72f87d, #4f534f), repeating-radial-gradient(circle at center center, #72f87d, #72f87d, 16px, transparent 32px, transparent 16px);
+    background-blend-mode: multiply;
 }
 
 .dropdown {
@@ -127,7 +134,7 @@ body {
     z-index: 1;
 }
 #Page_1_main:hover {
-    text-shadow: rgba(153, 230, 38, 0.432) 4px 4px;
+    text-shadow: rgba(161, 252, 25, 0.596) 6px 6px;
 }
 
 /* Page_2 head shape */
@@ -217,11 +224,14 @@ body {
     border-radius: 4px;
 
     /* background color */
-    background-color: rgba(116, 228, 108, 0.993);
+    background-color: #f4fbf4;
+    opacity: 0.9;
+    background: radial-gradient(circle, transparent 20%, #f4fbf4 20%, #f4fbf4 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #f4fbf4 20%, #f4fbf4 80%, transparent 80%, transparent) 62.5px 62.5px, linear-gradient(#34b836 5px, transparent 5px) 0 -2.5px, linear-gradient(90deg, #34b836 5px, #f4fbf4 5px) -2.5px 0;
+    background-size: 125px 125px, 125px 125px, 62.5px 62.5px, 62.5px 62.5px;
 }
 .Page_2_container__column h3{
     margin-top: 5vh;
-    color: bisque;
+    color: rgb(47, 107, 47);
     font-family: 'Indie Flower', cursive;
     font-size: 5vh;
 }
@@ -240,11 +250,20 @@ body {
     margin-top: 2.5vh;
     margin-bottom: 5vh;
     font-family: 'Indie Flower', cursive;
+    color: bisque;
+    background-color: rgb(47, 107, 47);
+    font-size: 5vh;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s;
+}
+.Page_2_container__column button:hover {
+    color: rgb(47, 107, 47);
+    background-color: bisque;
 }
 #Page_3 {
     width: 100%;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
 }
 
 #Page_3_head {
@@ -255,12 +274,7 @@ body {
     text-align: center;
 }
 
-#comment {
-    background-color: rgba(161, 255, 66, 0.836);
-}
-
 #Page_4 {
     width: 100%;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
 }
