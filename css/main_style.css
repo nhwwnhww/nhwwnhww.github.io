@@ -69,6 +69,8 @@ body {
 
     /* Width */
     width: 15vw;
+
+    background-color: rgba(32, 173, 32, 0.521);
 }
 
 /* The second level sub dropdown */
