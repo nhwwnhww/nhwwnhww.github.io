@@ -299,3 +299,14 @@ body {
     width: 100%;
     height: 100vh;
 }
+
+#comment {
+    transition: 3s;
+}
+
+#comment:hover{
+    background-color: #a8f8ae;
+    background-image:  radial-gradient(#303230 0.9px, transparent 0.9px), radial-gradient(#303230 0.9px, #a8f8ae 0.9px);
+    background-size: 36px 36px;
+    background-position: 0 0,18px 18px;
+}
