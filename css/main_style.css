@@ -12,6 +12,28 @@ body {
     background-position: 0 0,18px 18px;
 }
 
+/* 滚动槽 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: rgba(0,0,0,0.06);
+    -webkit-box-shadow: inset 0 0 5px rgba(24, 197, 24, 0.61);
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgba(0,0,0,0.12);
+    -webkit-box-shadow: inset 0 0 10px rgba(95, 212, 114, 0.952);
+}
+
+作者：是你的山楂
+链接：https://juejin.cn/post/6844903613936959496
+来源：稀土掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
 #header {
     height: 10vh;
     position: sticky;
