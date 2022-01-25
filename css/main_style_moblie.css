@@ -31,7 +31,7 @@
     }
     
     #header {
-        height: 10vh;
+        height: 70px;
         position: sticky;
         top: 0;
         z-index: 999;
@@ -66,7 +66,7 @@
         /* Border */
         border-radius: 10px;
     
-        font-size: 4vh;
+        font-size: 20px;
         text-align: center;
     }
     
@@ -104,7 +104,7 @@
     .dropdown ul ul {
         position: absolute;
         top: 0;
-        left: -100%;
+        left: -140%;
     }
     
     /* Change background color of list item when being hovered */
@@ -213,7 +213,7 @@
         margin-top: 5vh;
         text-align: center;
         font-family: 'Indie Flower', cursive;
-        font-size: 5vw;
+        font-size: 35px;
         font-weight: 600;
         color: rgba(226, 247, 224, 0.863);
     }
@@ -237,11 +237,11 @@
         flex: 1;
     
         /* OPTIONAL: Space between columns */
-        margin: 5vh 18px;
+        margin: 25px 5px;
     
         /* OPTIONAL: Border */
         border: 1px solid rgba(247, 240, 240, 0.3);
-        border-radius: 75px;
+        border-radius: 25px;
         box-shadow:  20px 20px 60px #122f13,
                  -20px -20px 60px #183f19;
     
@@ -252,29 +252,29 @@
         background-size: 125px 125px, 125px 125px, 62.5px 62.5px, 62.5px 62.5px;
     }
     .Page_2_container__column h3{
-        margin-top: 5vh;
+        margin-top: 15px;
         color: rgb(47, 107, 47);
         font-family: 'Indie Flower', cursive;
-        font-size: 5vh;
+        font-size: 15px;
     }
     .Page_2_container__column img{
-        margin-top: 2.5vh;
+        margin-top: 15px;
         font-family: 'Indie Flower', cursive;
         width: 80%;
         height: 50%;
     }
     .Page_2_container__column p{
-        margin-top: 2.5vh;
+        margin-top: 15px;
         font-family: 'Indie Flower', cursive;
         font-size: 20px;
     }
     .Page_2_container__column button{
-        margin-top: 2.5vh;
-        margin-bottom: 5vh;
+        margin-top: 15px;
+        margin-bottom: 15px;
         font-family: 'Indie Flower', cursive;
         color: bisque;
         background-color: rgb(47, 107, 47);
-        font-size: 5vh;
+        font-size: 15px;
         border-radius: 10px;
         padding: 5px;
         transition: 1s;
