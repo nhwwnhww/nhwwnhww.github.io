@@ -18,15 +18,22 @@
         }
 
         body {
-            z-index: -1;
+            z-index: 2;
             background-color: #137a7f;
             background-size: 54px 54px;
             background-image:  repeating-linear-gradient(to right, rgba(57,197,187,1), rgba(57,197,187,1) 2.7px, #137a7f 2.7px, #137a7f);ound-image: repeating-linear-gradient(45deg, rgba(57,197,187,1) 0, rgba(57,197,187,1) 1.9000000000000001px, #137a7f 0, #137a7f 50%);
         }
 
+        #Page_1_box {
+            z-index: 1;
+            height: 100vh;
+            width: 100%;
+        }
+
         /* Page_1 */
         #Page_1 {
-            height: 100vh;
+            position: fixed;
+            height: 100%;
             width: 100%;
             /* Center the content */
             align-items: center;
@@ -61,6 +68,7 @@
             height: 100%;
             vertical-align: middle;
             display: inline-block;
+            z-index: 999;
         }
 
         .shell {
@@ -138,9 +146,11 @@
 </head>
 <body>
     <!-- Page_1 -->
-    <div id="Page_1">
-        <h1 class="Page_1_head">Hatsune Miku</h1>
-        <h1 class="Page_1_head">初音ミク</h1>
+    <div id="Page_1_box">
+        <div id="Page_1">
+            <h1 class="Page_1_head">Hatsune Miku</h1>
+            <h1 class="Page_1_head">初音ミク</h1>
+        </div>
     </div>
 
     <!-- Page_2 -->
